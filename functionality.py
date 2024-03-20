@@ -19,10 +19,7 @@ def video_game(genre, games):
             if current_genre == genre:
                 result.append(name)
 
-    if len(result) == 0:
-        return "Sorry, I didn't"
-    else:
-        return random.choice(result)
+    return random.choice(result)
 
 
 def joke(jokes):
@@ -38,7 +35,7 @@ def story(stories):
 def guess_the_number(number):
     """Realize a guess the number game"""
     computer_number = random.randint(1, 10)
-    print("Computer number:", computer_number)
+    print("\tComputer number:", computer_number)
 
     if number == computer_number:
         print("You guessed")
@@ -49,9 +46,21 @@ def guess_the_number(number):
 def rock_paper_scissors(choice):
     """Realize the game rock scissors paper"""
     computer_choice = random.choice(["rock", "paper", "scissors"])
-    print("Computer choice:", computer_choice)
+    print("\tComputer choice:", computer_choice)
 
-    if choice == computer_choice:
-        print("You won")
-    else:
+    if choice == 'rock' and computer_choice == 'paper':
         print("You lost")
+    elif choice == 'rock' and computer_choice == 'scissors':
+        print("You win")
+    elif choice == 'paper' and computer_choice == 'rock':
+        print("You win")
+    elif choice == 'paper' and computer_choice == 'scissors':
+        print("You lost")
+    elif choice == 'scissors' and computer_choice == "rock":
+        print("You lost")
+    elif choice == 'scissors' and computer_choice == "paper":
+        print("You win")
+    elif choice not in ["rock", "paper", "scissors"]:
+        print("Sorry, I didn't understand your")
+    else:
+        print("we're tied")

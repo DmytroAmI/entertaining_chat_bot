@@ -24,7 +24,7 @@ songs = [
     ("Nirvana", "Come as You Are"),
     ("Daft Punk feat. Pharrell Williams", "Get Lucky"),
     ("Bon Jovi", "Livin’ on a Prayer"),
-    ("The Mamas and the Papas", "‘California Dreamin"),
+    ("The Mamas and the Papas", "California Dreamin"),
     ("Mark Ronson feat. Bruno Mars", "Uptown Funk"),
     ("Metallica", "Enter Sandman"),
     ("Sex Pistols", "God Saves the Queen"),
@@ -34,39 +34,40 @@ songs = [
     ("Eric Clapton", "Layla")
 ]
 
-video_games = [
-    {"Dark Souls": "rpg"},
-    {"Cyberpunk 2077": "rpg"},
-    {"Baldur's Gate III": "rpg"},
-    {"Elden Ring": "rpg"},
-    {"Serious Sam: The First Encounter": "shooter"},
-    {"Half-Life 2": "shooter"},
-    {"Metro Exodus": "shooter"},
-    {"Return to Castle Wolfenstein": "shooter"},
-    {"FIFA 23": "sports"},
-    {"Punch-Out!!": "sports"},
-    {"Wii Sports": "sports"},
-    {"Madden NFL 21": "sports"},
-    {"The Forest": "survival"},
-    {"Valheim": "survival"},
-    {"Rust": "survival"},
-    {"Minecraft": "survival"},
-    {"Red Dead Redemption 2": "adventure"},
-    {"Hogwarts Legacy": "adventure"},
-    {"God of War": "adventure"},
-    {"Star Wars Jedi: Survivor": "adventure"},
-    {"Civilization VI": "strategy"},
-    {"Crusader Kings III": "strategy"},
-    {"XCOM 2": "strategy"},
-    {"Age of Empires IV": "strategy"},
-    {"Forza Horizon 5": "racing"},
-    {"Gran Turismo 7": "racing"},
-    {"Need for Speed Heat": "racing"},
-    {"The Crew Motorfest": "racing"},
-    {"Sonic the Hedgehog 3": "platformer"},
-    {"Earthworm Jim 2": "platformer"},
-    {"Mega Man X": "platformer"},
-    {"Hollow Knight": "platformer"}
+genres = ["rpg", "shooter", "sports", "survival", "adventure", "strategy", "racing", "platformer"]
+games = [
+    {"Dark Souls": genres[0]},
+    {"Cyberpunk 2077": genres[0]},
+    {"Baldur's Gate III": genres[0]},
+    {"Elden Ring": genres[0]},
+    {"Serious Sam: The First Encounter": genres[1]},
+    {"Half-Life 2": genres[1]},
+    {"Metro Exodus": genres[1]},
+    {"Return to Castle Wolfenstein": genres[1]},
+    {"FIFA 23": genres[2]},
+    {"Punch-Out!!": genres[2]},
+    {"Wii Sports": genres[2]},
+    {"Madden NFL 21": genres[2]},
+    {"The Forest": genres[3]},
+    {"Valheim": genres[3]},
+    {"Rust": genres[3]},
+    {"Minecraft": genres[3]},
+    {"Red Dead Redemption 2": genres[4]},
+    {"Hogwarts Legacy": genres[4]},
+    {"God of War": genres[4]},
+    {"Star Wars Jedi: Survivor": genres[4]},
+    {"Civilization VI": genres[5]},
+    {"Crusader Kings III": genres[5]},
+    {"XCOM 2": genres[5]},
+    {"Age of Empires IV": genres[5]},
+    {"Forza Horizon 5": genres[6]},
+    {"Gran Turismo 7": genres[6]},
+    {"Need for Speed Heat": genres[6]},
+    {"The Crew Motorfest": genres[6]},
+    {"Sonic the Hedgehog 3": genres[7]},
+    {"Earthworm Jim 2": genres[7]},
+    {"Mega Man X": genres[7]},
+    {"Hollow Knight": genres[7]}
 ]
 
 jokes = [
@@ -82,40 +83,40 @@ jokes = [
     " Because he thought he couldn’t use his hands",
 ]
 
-s1 = ("In a quaint seaside town, there was a lighthouse whose light never faded. "
-      "Legend said it was powered by the heart of a sea captain who once guided ships to safety. "
-      "One stormy night, a lost sailor followed the unwavering light home, "
-      "only to find the ghost of the captain still keeping watch, ensuring every sailor made it back to shore. "
-      "The sailor spread the tale of the captain’s undying devotion, and the lighthouse became a beacon of hope, "
-      "its light a symbol of eternal guidance. "
+s1 = ("In a quaint seaside town, there was a lighthouse whose light never faded.\n"
+      "Legend said it was powered by the heart of a sea captain who once guided ships to safety.\n"
+      "One stormy night, a lost sailor followed the unwavering light home,\n"
+      "only to find the ghost of the captain still keeping watch, ensuring every sailor made it back to shore.\n"
+      "The sailor spread the tale of the captain’s undying devotion, and the lighthouse became a beacon of hope,\n"
+      "its light a symbol of eternal guidance.\n"
       "The end.")
 
-s2 = ("In the heart of an ancient forest, there was a tree that whispered secrets of the earth. "
-      "A curious traveler, drawn by its murmurs, leaned in close. "
-      "The tree spoke of hidden treasures and distant lands, igniting a spark of adventure in the traveler’s soul. "
-      "With a newfound purpose, the traveler set off on a journey that would become a tale for the ages. "
+s2 = ("In the heart of an ancient forest, there was a tree that whispered secrets of the earth.\n"
+      "A curious traveler, drawn by its murmurs, leaned in close.\n"
+      "The tree spoke of hidden treasures and distant lands, igniting a spark of adventure in the traveler’s soul.\n"
+      "With a newfound purpose, the traveler set off on a journey that would become a tale for the ages.\n"
       "The end.")
 
-s3 = ("In a village where the sun set in vibrant hues of orange and pink, "
-      "there lived a painter who could capture not just the images but the emotions of the sunset on his canvas. "
-      "One evening, a traveler, captivated by the painting, "
-      "realized he could feel the warmth of the sun and the cool evening breeze just by looking at it. "
-      "The painter had found a way to share the essence of the sunset with the world, forever. "
+s3 = ("In a village where the sun set in vibrant hues of orange and pink,\n"
+      "there lived a painter who could capture not just the images but the emotions of the sunset on his canvas.\n"
+      "One evening, a traveler, captivated by the painting,\n"
+      "realized he could feel the warmth of the sun and the cool evening breeze just by looking at it.\n"
+      "The painter had found a way to share the essence of the sunset with the world, forever.\n"
       "The end.")
 
-s4 = ("In a bustling market square, where merchants shouted and colors swirled, "
-      "a young boy discovered a magic coin that granted him the ability to understand the language of birds. "
-      "He spent his days conversing with sparrows and eagles, "
-      "learning the secrets of the skies and the tales of the winds. "
-      "His newfound friends sang of his kindness, and the boy became known as the Whisperer of Wings. "
+s4 = ("In a bustling market square, where merchants shouted and colors swirled,\n"
+      "a young boy discovered a magic coin that granted him the ability to understand the language of birds.\n"
+      "He spent his days conversing with sparrows and eagles,\n"
+      "learning the secrets of the skies and the tales of the winds.\n"
+      "His newfound friends sang of his kindness, and the boy became known as the Whisperer of Wings.\n"
       "The end.")
 
-s5 = ("In a quiet town where the nights were starlit and clear, there lived a cat with a coat as black as the cosmos. "
-      "Every night, it would climb to the highest rooftop, gazing at the stars. "
-      "One evening, a lost star fell from the sky and landed softly before the cat. "
-      "The star whispered tales of the universe, and in return, the cat shared stories of its earthly adventures. "
-      "Together, they exchanged stories until dawn, when the star ascended back to the sky, "
-      "leaving behind a shimmering trail and a friendship that spanned the heavens. "
+s5 = ("In a quiet town where the nights were starlit and clear, there lived a cat with a coat as black as the cosmos.\n"
+      "Every night, it would climb to the highest rooftop, gazing at the stars.\n"
+      "One evening, a lost star fell from the sky and landed softly before the cat.\n"
+      "The star whispered tales of the universe, and in return, the cat shared stories of its earthly adventures.\n"
+      "Together, they exchanged stories until dawn, when the star ascended back to the sky,\n"
+      "leaving behind a shimmering trail and a friendship that spanned the heavens.\n"
       "The end.")
 
 stories = [s1, s2, s3, s4, s5]
