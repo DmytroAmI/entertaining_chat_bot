@@ -1,4 +1,4 @@
-from functionality import *
+from lib import *
 from data import *
 
 while True:
