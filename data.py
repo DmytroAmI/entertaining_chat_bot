@@ -34,41 +34,16 @@ songs = [
     ("Eric Clapton", "Layla")
 ]
 
-genres = ["rpg", "shooter", "sports", "survival", "adventure", "strategy", "racing", "platformer"]
-games = [
-    {"Dark Souls": genres[0]},
-    {"Cyberpunk 2077": genres[0]},
-    {"Baldur's Gate III": genres[0]},
-    {"Elden Ring": genres[0]},
-    {"Serious Sam: The First Encounter": genres[1]},
-    {"Half-Life 2": genres[1]},
-    {"Metro Exodus": genres[1]},
-    {"Return to Castle Wolfenstein": genres[1]},
-    {"FIFA 23": genres[2]},
-    {"Punch-Out!!": genres[2]},
-    {"Wii Sports": genres[2]},
-    {"Madden NFL 21": genres[2]},
-    {"The Forest": genres[3]},
-    {"Valheim": genres[3]},
-    {"Rust": genres[3]},
-    {"Minecraft": genres[3]},
-    {"Red Dead Redemption 2": genres[4]},
-    {"Hogwarts Legacy": genres[4]},
-    {"God of War": genres[4]},
-    {"Star Wars Jedi: Survivor": genres[4]},
-    {"Civilization VI": genres[5]},
-    {"Crusader Kings III": genres[5]},
-    {"XCOM 2": genres[5]},
-    {"Age of Empires IV": genres[5]},
-    {"Forza Horizon 5": genres[6]},
-    {"Gran Turismo 7": genres[6]},
-    {"Need for Speed Heat": genres[6]},
-    {"The Crew Motorfest": genres[6]},
-    {"Sonic the Hedgehog 3": genres[7]},
-    {"Earthworm Jim 2": genres[7]},
-    {"Mega Man X": genres[7]},
-    {"Hollow Knight": genres[7]}
-]
+games = {
+    "rpg": ["Dark Souls", "Cyberpunk 2077", "Baldur's Gate III", "Elden Ring"],
+    "shooter": ["Serious Sam: The First Encounter", "Half-Life 2", "Metro Exodus", "Return to Castle Wolfenstein"],
+    "sports": ["FIFA 23", "Punch-Out!!", "Wii Sports", "Madden NFL 21"],
+    "survival": ["The Forest", "Valheim", "Rust", "Minecraft"],
+    "adventure": ["Red Dead Redemption 2", "Hogwarts Legacy", "God of War", "Star Wars Jedi: Survivor"],
+    "strategy": ["Civilization VI", "Crusader Kings III", "XCOM 2", "Age of Empires IV"],
+    "racing": ["Forza Horizon 5", "Gran Turismo 7", "Need for Speed Heat", "The Crew Motorfest"],
+    "platformer": ["Sonic the Hedgehog 3", "Earthworm Jim 2", "Mega Man X", "Hollow Knight"]
+}
 
 jokes = [
     "What sign were you born under? No parking.",

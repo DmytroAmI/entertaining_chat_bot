@@ -13,13 +13,9 @@ def song(songs):
 
 def video_game(genre, games):
     """Recommend a video game by genre"""
-    result = []
-    for game in games:
-        for name, current_genre in game.items():
-            if current_genre == genre:
-                result.append(name)
-
-    return random.choice(result)
+    for current_genre, names in games.items():
+        if current_genre == genre:
+            return random.choice(names)
 
 
 def joke(jokes):
@@ -37,10 +33,12 @@ def guess_the_number(number):
     computer_number = random.randint(1, 10)
     print("\tComputer number:", computer_number)
 
-    if number == computer_number:
+    if number == str(computer_number):
         print("You guessed")
+    elif number not in [str(num) for num in range(1, 11)]:
+        print("I didn't understand, enter a number from 1 to 10")
     else:
-        print("You lost")
+        print("You not guessed the number")
 
 
 def rock_paper_scissors(choice):

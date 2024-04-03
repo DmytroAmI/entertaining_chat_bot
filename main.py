@@ -22,11 +22,11 @@ while True:
             print(f"\n{current_song[0]} - '{current_song[1]}', enjoy the song!\n")
         case "3":
             print("\nAvailable genres:")
-            for genre in genres:
+            for genre in games.keys():
                 print("\t", genre)
             user_genre = input("\nChoice genre: ").lower().strip()
 
-            if user_genre not in genres:
+            if user_genre not in games.keys():
                 print("Sorry, I didn't understand")
             else:
                 print(f"Title: '{video_game(user_genre, games)}', hope you like it!\n")
